@@ -4,7 +4,14 @@
 <head>
 
   <title>Picture & srcset</title>
-
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
   <link
     rel="stylesheet"
     href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
@@ -12,9 +19,28 @@
 </head>
 
 <body>
+  <picture>
+    <source
+      media="(max-width: 576px)"
+      srcset="images/w150.png"
+    >
 
+    <source
+      media="(max-width: 768px)"
+      srcset="images/w420.png"
+    >
 
+    <source
+      media="(max-width: 992px)"
+      srcset="images/w820.png"
+    >
 
+    <img
+      src="images/w1900.png"
+      alt="abab"
+    >
+
+  </picture>
   <div
     class="pixeltab-host"
     id="html02-01-02"
