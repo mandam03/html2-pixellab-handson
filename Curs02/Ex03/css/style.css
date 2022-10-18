@@ -7,3 +7,19 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.btn-secondary {
+  color: blue;
+}
+
+.btn-inverted-light {
+  background-color: lightgray;
+}
+
+.btn-tertiary {
+  color: green;
+}
+
+.btn-text-gray {
+  color: gray;
+}

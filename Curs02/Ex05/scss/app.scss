@@ -10,12 +10,16 @@
   border: 1px solid #000;
 }
 
-@for $i from 1 through 9 {
+@for $i from 1 to 10 {
   .box-#{$i} {
-    @if $i % 2 == 0 {
+    border-width: $i * 1px;
+  }
+}
+
+@for $i from 0 to 10 {
+  .box-#{$i}0 {
+    @if $i % 2 != 0 {
       background-color: gray;
-    } @else {
-      border: 1px dotted blue;
     }
   }
 }
