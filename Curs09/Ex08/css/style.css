@@ -51,6 +51,14 @@
 }
 /* do not touch this */
 
+.flex-container-01 {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-container-01 :nth-child(2) {
+  flex-shrink: 2;
+}
 .flex-container-02 {
   justify-content: space-between;
   align-items: center;
@@ -63,4 +71,51 @@
 
 .flex-container-02 :nth-last-of-type(2) {
   flex-shrink: 3;
+}
+
+.flex-container-03 {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-container-03 :nth-child(3) {
+  flex-shrink: 2;
+}
+.flex-container-03 :nth-child(5) {
+  flex-shrink: 3;
+}
+
+.flex-container-04 {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-container-04 :nth-child(4) {
+  flex-shrink: 2;
+}
+
+.flex-container-04 :nth-child(3) {
+  flex-shrink: 3;
+}
+
+.flex-container-05 {
+  justify-content: center;
+}
+
+.flex-container-05 :nth-child(2) {
+  flex-shrink: 2;
+}
+
+.flex-container-06 {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-container-06 :nth-child(3) {
+  flex-shrink: 3;
+}
+
+.flex-container-06 :nth-child(5) {
+  flex-shrink: 0;
 }
