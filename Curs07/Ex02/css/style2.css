@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  display: block;
+}
+
+@keyframes travel2 {
+  25% {
+    transform: translate(0, calc(97vh - 100px));
+  }
+
+  50% {
+    transform: translate(calc(97vw - 100px));
+  }
+
+  75% {
+    transform: translate(0);
+  }
+
+  0%,
+  100% {
+  }
+}
+
+.box2 {
+  animation: travel2 10s ease-out;
+}
